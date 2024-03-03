@@ -24,7 +24,7 @@ const initLocalStorage = () => {
     return appValues
 }
 
-const AppContext = createContext()
+export const AppContext = createContext()
 
 export const AppContextProvider = ({ children }) => {
     const [appValues, setAppValues] = useState(initLocalStorage())
